@@ -6,9 +6,9 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
-"devDependencies": {
-  "react-scripts": "3.0.1"
-},
+  "devDependencies": {
+    "react-scripts": "3.0.1"
+  },
   "peerDependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
@@ -33,5 +33,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/react@1.0.30"
+    },
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm"
   }
 }
