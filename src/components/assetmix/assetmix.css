@@ -1,0 +1,48 @@
+
+table { 
+  border-spacing: 1;
+  border-collapse: collapse; 
+  background:rgb(173, 173, 173);
+  border-radius:6px;
+  overflow:hidden;
+  max-width:600px; 
+  width:100%;
+  margin:0 auto;
+  position:relative;
+  color: white;
+}
+
+td,th { 
+  padding-left:30px; 
+  padding-right: 40px;
+}
+
+thead tr { 
+  height:60px;
+  background:#b60000;
+  font-size:16px;
+}
+
+tbody tr { 
+  height:48px; border-bottom:1px solid black ;
+}
+
+tbody tr:last-child {
+  border: 0
+}
+
+td,th { 
+  text-align:left;
+}
+
+td,th:l { 
+  text-align:right;
+}
+
+td,th:c { 
+  text-align:center;
+}
+
+td,th:r { 
+  text-align:center;
+}
