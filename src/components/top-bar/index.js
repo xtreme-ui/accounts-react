@@ -5,11 +5,12 @@ export default class TopBar extends Component {
         return (
             <div className={this.props.className}>
                 <a href="/">
-                    <h1>My Store</h1>
+                    <h1>Welcome back</h1>
+                    <p>Email:</p>
                 </a>
                 <a href="/" className="button fancy-button">
-                    <i className="material-icons">shopping_cart</i>
-                    Checkout
+                You have 0 unread messages
+                    <i className="material-icons">email</i>
                </a>
             </div>
         );
