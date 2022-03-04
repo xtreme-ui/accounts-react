@@ -1,6 +1,11 @@
 .banner {
     display: flex;
     justify-content: flex-start;
+    overflow: hidden;
+}
+
+.column-item {
+    margin-left:35px;
 }
 .stockNum{
     color: red;

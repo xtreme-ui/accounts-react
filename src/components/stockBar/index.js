@@ -7,38 +7,19 @@ export default class TopBar extends Component {
         return (
             <div className={this.props.className}>
                 <div className="banner">
+                    <p><b>Markets</b> as of 3/4/3033 11:30 a.m.,ET</p> 
                     <div className="column-item">
-                        <span><p>&nbsp;<b>Markets</b> as of 3/4/3033 11:30 a.m.,ET</p></span>
+                        <p><b>DIJA  </b>18,132.70  <a className="stockNum">-81.72 </a></p> 
                     </div>
                     <div className="column-item">
-                        <span>
-                            <p>&nbsp;&nbsp;&nbsp;
-                                &nbsp;&nbsp;&nbsp;
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <b>DIJA &nbsp;</b>18,132.70 &nbsp;<a className="stockNum">-81.72&nbsp;</a>
-                                &nbsp;&nbsp;&nbsp;</p></span>
+                        <p><b>NASDAQ  &</b>4,963.53  <a className="stockNum">-24.36</a></p> 
                     </div>
                     <div className="column-item">
-                        <span><p>&nbsp;&nbsp;&nbsp;
-                            <b>NASDAQ &nbsp;&</b>
-                            4,963.53 &nbsp;<a className="stockNum">-24.36</a>
-                            &nbsp;&nbsp;&nbsp;</p></span>
-                        
+                         <p><b>S&P  </b>2,104.50  <a className="stockNum">-6.24</a></p> 
                     </div>
                     <div className="column-item">
-                        <span><p>&nbsp;&nbsp;&nbsp;
-                            <b>S&P &nbsp;</b>
-                            2,104.50 &nbsp;<a className="stockNum">-6.24</a>
-                            &nbsp;&nbsp;&nbsp;</p></span>
+                        <p><b>10-year T-Note  </b>2.00% <a className="stockNum">-0.01</a></p> 
                     </div>
-
-                    <div className="column-item">
-                        <span><p>&nbsp;&nbsp;&nbsp;
-                            <b>10-year T-Note &nbsp;</b> 
-                            2.00%&nbsp;<a className="stockNum">-0.01</a>
-                            &nbsp;&nbsp;&nbsp;</p></span>
-                    </div>
-
                 </div>
             </div>
         );
