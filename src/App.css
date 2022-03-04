@@ -75,8 +75,7 @@ label {
   border-radius: 2px;
   font-size: 14px;
   cursor: pointer;
-  background-color: white;
-  color: #96151d;
+  color: white;
   border: none;
 }
 
@@ -98,7 +97,7 @@ label {
 } */
 
 .fancy-button i.material-icons {
-  color: #96151d;
+  color: white;
   padding-right: 4px;
 }
 
@@ -118,11 +117,29 @@ label {
 .top-bar h1 {
   color: white;
   margin: 0;
+  padding-top: 46px;
 }
 
 .top-bar p {
   color: white;
   margin: 0;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+
+.left {
+  width: 200px;
+  float: left;
+  height: 55px;
+}
+.middle{
+  display: flex;
+}
+
+.right {
+
+  width: 200px;
+
 }
 
 /* Stock Bar */
@@ -146,7 +163,9 @@ label {
 .stocks {
   white-space: normal;
 }
-
+.column-item{
+  width: max-content;
+}
 
 /* Checkout Cart, Shipping Prices */
 
