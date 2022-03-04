@@ -1,18 +1,18 @@
 ---
-description: A component that interacts with the Profile Retrieval Service
-labels: ["profile-data", "vvm"]
+description: A component that interacts with the Fund Retrieval Api and returns market fund information
+labels: ["market-data", "frapi"]
 ---
 
-# Client Profile Data
+# Fund Retrieval  Data
 
 Features
 
-- Retieves client profile data and provides FirstName/LastName, email address, last logon, and unread messages
+- Retieves market data and provides live market performance data
 
 ## Example
 
 ```js
 () => {
-  return <Account profileId={123} />;
+  return <Market current_price={40811} />;
 };
 ```
