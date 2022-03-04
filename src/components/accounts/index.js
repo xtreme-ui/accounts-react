@@ -19,7 +19,6 @@ export default class Accounts extends Component {
           </TableHead>
           <TableBody>
             {
-            // console.log(this.rows)
             this.rows.accounts.map((row) => (
               <TableRow key={row.type}>
                 <TableCell component="th" scope="row">
