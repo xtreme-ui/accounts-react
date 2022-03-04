@@ -10,8 +10,6 @@ export default class AssetsTab extends Component {
     this.state = {
       showAssetMix: true,
     }
-    this.assetMixRef = React.createRef();
-    this.personalPerformanceRef = React.createRef();
   }
 
 
@@ -29,28 +27,37 @@ export default class AssetsTab extends Component {
         <div className="main-div">
           <div className="tab-container">
             {this.state.showAssetMix ?
-            <div id="asset-mix">
+            <div>
               <div className="tab-button-container">
                 <div className="tab-offset">
                   <button className="tab-button-active" onClick={() => this.openTab("asset")}>Asset Mix</button>
                   <button className="tab-button-inactive" onClick={() => this.openTab("performance")}>Personal Performance</button>
                 </div>
               </div>
-              <div>
-              <AssetMix />
+              <div className="tab-content">
+                <AssetMix />
               </div>
             </div> :
-            <div id="performance">
+            <div>
               <div className="tab-button-container">
                 <div className="tab-offset">
                   <button className="tab-button-inactive" onClick={() => this.openTab("asset")}>Asset Mix</button>
                   <button className="tab-button-active" onClick={() => this.openTab("performance")}>Personal Performance</button>
                 </div>
               </div>
-              <img className="personal-performance" src={personal_performance} alt="PersonalPerformance" />
+              <div className="tab-content">
+                <img className="personal-performance" src={personal_performance} alt="PersonalPerformance" />
+              </div>
             </div>}
           </div>
         </div>
       );
   }
 }
+AssetsTab.defaultProps = {
+  profileId: 119372983
+}
+
+AssetsTab.propTypes = {
+  profileId: Number 
+}; 
