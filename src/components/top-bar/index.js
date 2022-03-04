@@ -12,14 +12,16 @@ export default class TopBar extends Component {
                             <p>Email:</p>
                         </div>
                         <div className="column middle">
-                            <p>Last Logon: March 7, 2022 08:52 a.m., Eastern Time</p>
+                            <p>Last Logon: March 7, 2022 08:52 a.m., Eastern Time
+                            </p>
                         </div>
-                        <div className="column right">
-                            <p>You have 0 unread messages</p>
-                            <a href="/" className="button fancy-button">
-                                <i className="material-icons">email</i>
-                            </a>
-                        </div>
+                        {/* <div className="column right">
+                            <p>You have 0 unread messages
+                                <a href="/" className="button fancy-button">
+                                    <i className="material-icons">email</i>
+                                </a>
+                            </p>
+                        </div> */}
                     </div>
                 </a>
             </div>
