@@ -1,0 +1,44 @@
+.main-div {
+  width: 500px;
+  height: 400px;
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: antiquewhite;
+  margin-top: 10px;
+  margin-left: 10px;
+  box-shadow: 2px 2px 2px rgb(126, 126, 126);
+}
+
+.tab-container {
+  margin: 20px;
+}
+
+.tab-button-active {
+  background-color: rgb(139, 139, 139);
+  border-radius: 0;
+  border: 2px solid black;
+  border-bottom: 0 solid black;
+}
+
+.tab-button-inactive {
+  background-color: rgb(194, 194, 194);
+  border-radius: 0;
+  border: 1px solid black;
+  border-bottom: 0 solid black;
+}
+
+.tab-button-container {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.tab-offset {
+  margin-left: 10px;
+}
+
+.personal-performance {
+  margin-top: 20px;
+  width: 100%;
+  box-shadow: 1px 1px 2px 3px rgb(126, 126, 126);
+  height: 80%;
+}

@@ -1,15 +1,17 @@
 
 table { 
+  float: left;
   border-spacing: 1;
   border-collapse: collapse; 
-  background:rgb(173, 173, 173);
-  border-radius:6px;
   overflow:hidden;
-  max-width:600px; 
+  background:rgb(173, 173, 173);
+  border-radius: 6px;
   width:100%;
-  margin:0 auto;
+  margin-top: 20px;
   position:relative;
   color: white;
+  font-size: 13px;
+  box-shadow: 2px 2px 2px rgb(82, 82, 82);
 }
 
 td,th { 
@@ -18,13 +20,15 @@ td,th {
 }
 
 thead tr { 
-  height:60px;
+  height:40px;
   background:#b60000;
-  font-size:16px;
+  font-size:14px;
 }
 
 tbody tr { 
-  height:48px; border-bottom:1px solid black ;
+  height:48px; 
+  border-bottom:1px solid black;
+  color: black;
 }
 
 tbody tr:last-child {
