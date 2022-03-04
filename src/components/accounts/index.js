@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 import { TableBody, Table, TableCell, TableContainer, TableHead, TableRow, Paper} from "@material-ui/core"
-import { accounts } from "./accounts";
+import { profiles } from "./accounts";
 
 export default class Accounts extends Component {
 
-  rows = accounts;
+  rows = profiles.filter(profile => profile.profileId === this.props.profileId)[0];
 
   render() {
     return (
       <TableContainer component={Paper}>
+        {this.rows ? 
         <Table>
           <TableHead>
             <TableRow>
@@ -17,7 +18,9 @@ export default class Accounts extends Component {
             </TableRow>
           </TableHead>
           <TableBody>
-            {this.rows.map((row) => (
+            {
+            // console.log(this.rows)
+            this.rows.accounts.map((row) => (
               <TableRow key={row.type}>
                 <TableCell component="th" scope="row">
                   {row.type}
@@ -27,7 +30,18 @@ export default class Accounts extends Component {
             ))}
           </TableBody>
         </Table>
+        : 
+        <p>Error</p>
+        }
       </TableContainer>
     );
   }
 }
+
+Accounts.defaultProps = {
+  profileId: 123
+}
+
+Accounts.propTypes = {
+  profileId: Number 
+};

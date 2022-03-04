@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <TopBar className="top-bar" />
-      <Accounts />
+      <Accounts profileId={789}/>
       <div className="container">
         <ProductList />
       </div>
